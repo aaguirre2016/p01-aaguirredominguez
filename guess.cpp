@@ -13,11 +13,9 @@
 
    int randomNumber; //holds random number
    int guess;
-   int offbynumber;
-
-  
+   randomNumber - guess;
+   
    randomNumber = rand() % 10 + 1; 
-   offbynumber = (randomNumber - guess);
 
    cout << "Guess the computer's number: " << endl; 
    cin >> guess;
@@ -25,12 +23,14 @@
 
 if ( guess == randomNumber ) 
     {
-    cout << "Your guess is correct!" << endl;
+    cout << "Your guess is correct! You win! " << endl;
     }
 else
     {
-    cout << "You were off by " << offbynumber << endl;
-    } 
+    cout << "You were off by " << abs( randomNumber - guess) << " Sorry, you lose." << endl;
+    }
 
-   return 0;
+
+
+    return 0;
 }
