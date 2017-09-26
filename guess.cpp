@@ -11,13 +11,13 @@
 {   
    srand ( time(NULL));
 
-   int randomNumber; //holds random number
+   int randomNumber;
    int guess;
-   randomNumber - guess;
-   
+
+
    randomNumber = rand() % 10 + 1; 
 
-   cout << "Guess the computer's number: " << endl; 
+   cout << "Guess the computer's number between 1 and 10: " << endl; 
    cin >> guess;
    cout << "Random Number: " << randomNumber << endl;
 
@@ -29,8 +29,7 @@ else
     {
     cout << "You were off by " << abs( randomNumber - guess) << " Sorry, you lose." << endl;
     }
-
-
+  
 
     return 0;
 }
